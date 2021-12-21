@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+.flex {
+    display: flex;
+}
+
 body {
     margin: auto;
     max-width: 800px;
@@ -18,11 +22,33 @@ header {
     background-color: rgb(0, 51, 153);
     padding: 5px;
 }
-header .top {
-    display: flex;
+
+header .top * {
+    vertical-align: middle;
 }
 header .top .right {
     margin-left: auto;
+}
+header .logo-container {
+    padding-top: 1em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+header .logo-container img {
+    border: solid black 2px;
+}
+
+.navbar {
+    background-color: rgb(102, 152, 203);
+    text-align: center;
+    padding: 0.7em;
+    color: rgb(28, 6, 58);
+}
+.navbar a {
+    color: white;
+}
+.navbar a:hover {
+    color: #040c5c;
 }
 
 a {
