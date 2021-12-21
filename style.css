@@ -6,8 +6,22 @@
     padding: 0;
 }
 
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
 .flex {
     display: flex;
+}
+.a-ri {
+    text-align: right;
+}
+.fa-ri {
+    margin-left: auto;
 }
 
 body {
@@ -21,14 +35,21 @@ header {
     color: white;
     background-color: rgb(0, 51, 153);
     padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
-
-header .top * {
-    vertical-align: middle;
+header a,
+nav a {
+    color: white;
+    font-weight: normal;
 }
 header .top .right {
     margin-left: auto;
 }
+header .top .right a {
+    font-weight: bold;
+}
+
 header .logo-container {
     padding-top: 1em;
     padding-bottom: 3em;
@@ -51,10 +72,86 @@ header .logo-container img {
     color: #040c5c;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+main {
+    padding: 10px;
 }
-a:hover {
-    text-decoration: underline;
+
+.mgb {
+    display: flex;
+}
+.mgb section:first-child {
+    width: 64%;
+}
+.mgb .right {
+    flex-grow: 1;
+    padding-left: 1em;
+}
+.mgb .login-form {
+    width: 100%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(0, 51, 153);
+    padding: 0.5em;
+    text-align: center;
+}
+.login-form h4 {
+    color: rgb(0, 51, 153);
+}
+.login-form form {
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ftred {
+    border: solid 1px rgb(255, 204, 153);
+    margin-bottom: 1em;
+}
+.ftred .title {
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+    padding: 0.5em;
+    padding-left: 7px;
+    background-color: rgb(255, 204, 153);
+}
+.ftred .content {
+    overflow: auto;
+}
+.ftred .imgtable {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    padding-top: 0.5em;
+}
+.ftred .imgtable div {
+    display: flex;
+    flex-direction: column;
+}
+.ftred .imgtable div:not(:last-child) {
+    margin-right: 3.5em;
+}
+.ftred .imgtable p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.ftred .imgtable img {
+    width: 90px;
+}
+.ftred .txttable {
+    display: flex;
+    padding: 0.5em;
+}
+.ftred .txttable div {
+    width: 50%;
+}
+.ftred.blue {
+    border: 0;
+    padding: 1px;
+}
+.ftred.blue .title {
+    background-color: rgb(181, 204, 251);
 }
