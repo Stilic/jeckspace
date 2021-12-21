@@ -34,6 +34,7 @@
         <a href="#">Browse</a>
         | <a href="#">Search</a>
         | <a href="#">Invite</a>
+        | <a href="#">Rank</a>
         | <a href="#">Mail</a>
         | <a href="#">Blog</a>
         | <a href="#">Favorites</a>
