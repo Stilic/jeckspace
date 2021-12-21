@@ -116,6 +116,36 @@
                 </div>
             </section>
         </div>
+        <div class="news">
+            <div>
+                <section>
+                    <h3>Get Started on JeckSpace!</h3>
+                    <p>Join for free, and view profiles, connect with others, blog, rank music, and much more!</p>
+                </section>
+                <p class="mlink"><a href="#">Learn More</a></p>
+            </div>
+            <div>
+                <section>
+                    <h3>Create Your Profile!</h3>
+                    <p>Tell us about yourself, upload your pictures, and start adding triends to your network!</p>
+                </section>
+                <p class="mlink"><a href="#">Start Now</a></p>
+            </div>
+            <div>
+                <section>
+                    <h3>Browse through Profiles!</h3>
+                    <p>Read through millions of profiles on JeckSpace! See pix, read blogs, and more!</p>
+                </section>
+                <p class="mlink"><a href="#">Browse Now</a></p>
+            </div>
+            <div>
+                <section>
+                    <h3>Invite Your Triends!</h3>
+                    <p>Invite your triends, and as they invite their triends your network will grow even larger!</p>
+                </section>
+                <p class="mlink"><a href="#">Invite Triends Now</a></p>
+            </div>
+        </div>
     </main>
 </body>
 

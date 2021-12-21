@@ -1,9 +1,20 @@
+:root {
+    --blue: rgb(0, 51, 153);
+    --hablue: rgb(181, 204, 251);
+    --orange: rgb(255, 204, 153);
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h3,
+h4 {
+    color: var(--blue);
 }
 
 a {
@@ -33,7 +44,7 @@ body {
 
 header {
     color: white;
-    background-color: rgb(0, 51, 153);
+    background-color: var(--blue);
     padding: 5px;
     padding-left: 7px;
     padding-right: 7px;
@@ -42,6 +53,9 @@ header a,
 nav a {
     color: white;
     font-weight: normal;
+}
+header .top p {
+    line-height: 1.75em;
 }
 header .top .right {
     margin-left: auto;
@@ -68,6 +82,12 @@ header .logo-container img {
 .navbar a {
     color: white;
 }
+.navbar a:not(:first-child) {
+    margin-left: 0.3em;
+}
+.navbar a:not(:last-child) {
+    margin-right: 0.4em;
+}
 .navbar a:hover {
     color: #040c5c;
 }
@@ -93,12 +113,9 @@ main {
 .login-form {
     display: flex;
     flex-direction: column;
-    border: solid 1px rgb(0, 51, 153);
+    border: solid 1px var(--blue);
     padding: 0.5em;
     text-align: center;
-}
-.login-form h4 {
-    color: rgb(0, 51, 153);
 }
 .login-form form {
     padding: 3px;
@@ -107,7 +124,7 @@ main {
 }
 
 .ftred {
-    border: solid 1px rgb(255, 204, 153);
+    border: solid 1px var(--orange);
     margin-bottom: 1em;
 }
 .ftred .title {
@@ -116,7 +133,7 @@ main {
     width: 100%;
     padding: 0.5em;
     padding-left: 7px;
-    background-color: rgb(255, 204, 153);
+    background-color: var(--orange);
 }
 .ftred .content {
     overflow: auto;
@@ -153,5 +170,34 @@ main {
     padding: 1px;
 }
 .ftred.blue .title {
-    background-color: rgb(181, 204, 251);
+    background-color: var(--hablue);
+}
+
+.news {
+    display: flex;
+    width: 100%;
+}
+.news div {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 0.5em;
+    background-color: var(--hablue);
+    border: solid 1px var(--blue);
+}
+.news div section {
+    flex-grow: 1;
+}
+.news div:not(:last-child) {
+    border-right: 0;
+}
+.news .mlink {
+    margin-top: 1em;
+    text-align: right;
+}
+.news a::before {
+    display: inline-block;
+    margin-right: 0.25em;
+    content: "» ";
+    color: rgb(204, 0, 0);
 }
