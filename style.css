@@ -60,18 +60,31 @@ a:hover {
 .flex {
     display: flex;
 }
+.fce {
+    justify-content: center;
+    align-items: center;
+}
 .a-ri {
     text-align: right;
 }
 .fa-ri {
     margin-left: auto;
 }
+.lt {
+    font-size: 9px;
+}
 
 body {
-    margin: auto;
-    max-width: 800px;
     font-family: verdana, arial, sans-serif, helvetica;
     font-size: 8pt;
+}
+
+.bbb {
+    margin: auto;
+    max-width: 800px;
+}
+.bg {
+    background-color: rgb(229, 229, 229);
 }
 
 header {
@@ -82,7 +95,7 @@ header {
     padding-right: 7px;
 }
 header a,
-nav a {
+nav:not(.trans) a {
     color: white;
     font-weight: normal;
 }
@@ -105,22 +118,28 @@ header .logo-container img {
     border: solid black 2px;
 }
 
-.navbar {
+nav {
     background-color: rgb(102, 152, 203);
     text-align: center;
     padding: 0.7em;
     color: rgb(28, 6, 58);
 }
-.navbar a {
+nav.trans {
+    background: none;
+}
+nav.trans a {
+    color: black;
+}
+nav a {
     color: white;
 }
-.navbar a:not(:first-child) {
+nav a:not(:first-child) {
     margin-left: 0.3em;
 }
-.navbar a:not(:last-child) {
+nav a:not(:last-child) {
     margin-right: 0.4em;
 }
-.navbar a:hover {
+nav a:hover {
     color: #040c5c;
 }
 
@@ -233,4 +252,16 @@ main {
     margin-right: 0.25em;
     content: "» ";
     color: rgb(204, 0, 0);
+}
+
+footer {
+    padding-top: 1em;
+    text-align: center;
+}
+footer *:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+footer nav {
+    padding: 0;
+    padding-bottom: 0.5em;
 }
