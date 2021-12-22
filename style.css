@@ -40,6 +40,15 @@ input {
     margin-right: 1em;
 }
 
+ul,
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+ol li::marker {
+    font-size: 1.3em;
+}
+
 .org {
     background-color: var(--orange);
     color: white;
@@ -70,8 +79,14 @@ a:hover {
 .fa-ri {
     margin-left: auto;
 }
+.oor {
+    color: var(--orange);
+}
 .lt {
     font-size: 9px;
+}
+.ctac *:not(:last-child) {
+    margin-bottom: 0.75em;
 }
 
 body {
