@@ -30,8 +30,7 @@
     </header>
     <nav class="navbar">
         <a href="#">Home</a>
-        |
-        <a href="#">Browse</a>
+        | <a href="#">Browse</a>
         | <a href="#">Search</a>
         | <a href="#">Invite</a>
         | <a href="#">Rank</a>
