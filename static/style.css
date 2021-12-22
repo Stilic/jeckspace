@@ -49,11 +49,6 @@ ol li::marker {
     font-size: 1.3em;
 }
 
-.org {
-    background-color: var(--orange);
-    color: white;
-}
-
 .ad {
     text-align: center;
 }
@@ -75,6 +70,9 @@ a:hover {
 }
 .a-ri {
     text-align: right;
+}
+.center {
+    text-align: center;
 }
 .fa-ri {
     margin-left: auto;
@@ -129,9 +127,6 @@ header .logo-container {
     padding-bottom: 3em;
     text-align: center;
 }
-header .logo-container img {
-    border: solid black 2px;
-}
 
 nav {
     background-color: rgb(102, 152, 203);
@@ -172,27 +167,53 @@ main {
     flex-grow: 1;
     padding-left: 1em;
 }
-.mgb .login-form {
+.mgb .daform {
     width: 100%;
 }
 
-.login-form {
+.daform {
     display: flex;
     flex-direction: column;
     border: solid 1px var(--blue);
     padding: 0.5em;
     text-align: center;
 }
-.login-form form {
+.daform form {
     padding: 3px;
     padding-bottom: 1.5em;
     margin-left: auto;
     margin-right: auto;
 }
 
+.box,
+.robox {
+    border: solid 2px black;
+}
+.robox {
+    width: fit-content;
+    margin: auto;
+    display: table;
+    padding: 3px;
+    text-align: center;
+}
+
 .featured {
     border: solid 1px var(--haorange);
     margin-bottom: 1em;
+}
+.featured.pd .content {
+    padding-bottom: 1em;
+}
+.featured.blue {
+    padding: 1px;
+    border: 0;
+}
+.featured.bluer {
+    border-color: var(--hablue);
+}
+.featured.blue .title,
+.featured.bluer .title {
+    background-color: var(--hablue);
 }
 .featured .title {
     display: flex;
@@ -231,13 +252,6 @@ main {
 }
 .featured .txttable div {
     width: 50%;
-}
-.featured.blue {
-    border: 0;
-    padding: 1px;
-}
-.featured.blue .title {
-    background-color: var(--hablue);
 }
 
 .news {

@@ -1,4 +1,4 @@
-<div class="login-form">
+<div class="daform">
     <h4>Member Login</h4>
     <form>
         <label for="email">E-Mail:</label>
@@ -15,7 +15,7 @@
         <br>
         <div class="btns">
             <input type="submit" value="LOGIN">
-            <button class="org">SIGN UP!</button>
+            <a href="/signup">SIGN UP!</a>
         </div>
         <a href="#">Forgot your password?</a>
 </div>

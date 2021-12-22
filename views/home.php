@@ -28,7 +28,7 @@
         <div class="featured blue">
             <div class="title">
                 <p>MySpace Member Blogs</p>
-                <p class="fa-ri"><a href="#">[what's this?]</a></p>
+                <p class="fa-ri" id="whatmemblog"><a href="#">[what's this?]</a></p>
             </div>
             <div class="content txttable">
                 <div class="left">
@@ -71,7 +71,7 @@
             <h3>Create Your Profile!</h3>
             <p>Tell us about yourself, upload your pictures, and start adding triends to your network!</p>
         </section>
-        <p class="mlink"><a href="#">Start Now</a></p>
+        <p class="mlink"><a href="/signup">Start Now</a></p>
     </div>
     <div>
         <section>
@@ -89,3 +89,9 @@
     </div>
 </div>
 </div>
+
+<script>
+    document.querySelector("#whatmemblog").onclick = function() {
+        window.open("/popup?text=whatisblog", "", "width=300,height=113");
+    };
+</script>

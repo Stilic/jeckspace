@@ -5,7 +5,7 @@
     <title>JeckSpace.cum - a place for triends</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -21,12 +21,12 @@
                     &nbsp;&nbsp;&nbsp;
                     <button>Go</button>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <p><strong><a href="#">Help</a></strong> | <strong><a href="#">Sign Up</a></strong>
+                    <p><strong><a href="#">Help</a></strong> | <strong><a href="/signup">Sign Up</a></strong>
                     </p>
                 </div>
             </div>
             <div class="logo-container">
-                <img src="/img/logo.png" alt="">
+                <img class="box" src="/img/logo.png" alt="">
             </div>
         </header>
         <nav>
@@ -49,7 +49,11 @@
             <?php
             // https://web.archive.org/web/20040610090214/http://www.myspace.com/index.cfm?fuseaction=splash
             require 'vendor/autoload.php';
+            // require 'db.php';
+
             $router = new AltoRouter();
+            // $db = new db();
+
             function page($page)
             {
                 require __DIR__ . '/views/' . $page . '.php';
@@ -58,10 +62,17 @@
             $router->map('GET', '/', function () {
                 page('home');
             });
+
             $router->map('GET', '/login', function () {
                 page('login');
             });
+            $router->map('GET', '/signup', function () {
+                page('signup');
+            });
 
+            $router->map('GET', '/popup', function () {
+                page('popup');
+            });
             $router->map('GET', '/misc/about', function () {
                 page('about');
             });
@@ -99,6 +110,12 @@
             </footer>
         </div>
     </div>
+    <script>
+        console.log("%cOMG YOU GOT THE THING!", "color:red;font-size:30px;");
+        console.log(
+            "Don't copy-paste random text here. There is 1/10 chance you got your account hacked and to lost your triends!"
+        );
+    </script>
 </body>
 
 </html>
