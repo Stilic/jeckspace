@@ -47,26 +47,26 @@
     <main>
         <div class="mgb">
             <section class="left">
-                <div class="ftred">
+                <div class="featured">
                     <div class="title">
                         <p>Cool New People</p>
                     </div>
                     <div class="content imgtable">
                         <div>
-                            <p><a href="#">Nikki</a></p><img src="amogus.jpg" alt="">
+                        <a href="#"><p>Nikki</p><img src="amogus.jpg" alt=""></a>
                         </div>
                         <div>
-                            <p><a href="#">Haley</a></p><img src="amogus.jpg" alt="">
+                        <a href="#"><p>Haley</p><img src="amogus.jpg" alt=""></a>
                         </div>
                         <div>
-                            <p><a href="#">Leiah</a></p><img src="amogus.jpg" alt="">
+                        <a href="#"><p>Leiah</p><img src="amogus.jpg" alt=""></a>
                         </div>
                         <div>
                             <p><a href="#">Rachel</a></p><img src="amogus.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="ftred blue">
+                <div class="featured blue">
                     <div class="title">
                         <p>MySpace Member Blogs</p>
                         <p class="fa-ri"><a href="#">[what's this?]</a></p>
@@ -107,13 +107,18 @@
                         <label for="remember">Remember my E-mail</label>
                         <br>
                         <br>
-                        <input type="submit" value="LOGIN">
-                        <br>
+                        <div class="btns">
+                            <input type="submit" value="LOGIN">
+                            <button class="org">SIGN UP!</button>
+                        </div>
                         <a href="#">Forgot your password?</a>
-                    </form>
-                    <br>
                 </div>
-            </section>
+                <div class="ad">
+                    <img src="img/advertisement.gif" alt="ADVERTISSEMENT">
+                </div>
+                </form>
+        </div>
+        </section>
         </div>
         <div class="news">
             <div>
