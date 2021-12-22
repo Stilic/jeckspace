@@ -12,6 +12,15 @@
     padding: 0;
 }
 
+@media screen and (max-width: 560px) {
+    .mgb {
+        flex-direction: column;
+    }
+    .mgb section:first-child {
+        width: 100%;
+    }
+}
+
 h3,
 h4 {
     color: var(--blue);
@@ -99,7 +108,7 @@ main {
 .mgb {
     display: flex;
 }
-.mgb section:first-child {
+.mgb .left {
     width: 64%;
 }
 .mgb .right {
