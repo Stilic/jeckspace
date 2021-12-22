@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<!-- https://web.archive.org/web/20040610090214/http://www.myspace.com/index.cfm?fuseaction=splash -->
+
 <head>
     <title>JeckSpace.cum - a place for triends</title>
     <meta charset="utf-8">
