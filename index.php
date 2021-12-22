@@ -55,21 +55,21 @@
                         <div class="content imgtable">
                             <div>
                                 <a href="#">
-                                    <p>Nikki</p><img src="amogus.jpg" alt="">
+                                    <p>Nikki</p><img src="img/amogus.jpg" alt="">
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
-                                    <p>Haley</p><img src="amogus.jpg" alt="">
+                                    <p>Haley</p><img src="img/amogus.jpg" alt="">
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
-                                    <p>Leiah</p><img src="amogus.jpg" alt="">
+                                    <p>Leiah</p><img src="img/amogus.jpg" alt="">
                                 </a>
                             </div>
                             <div>
-                                <p><a href="#">Rachel</a></p><img src="amogus.jpg" alt="">
+                                <p><a href="#">Rachel</a></p><img src="img/amogus.jpg" alt="">
                             </div>
                         </div>
                     </div>
